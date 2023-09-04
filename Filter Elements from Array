@@ -1,0 +1,14 @@
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var filter = function(arr, fn) {
+  const response = [];
+  for(const i in arr){
+    if(fn(arr[i], Number(i))) {
+      response.push(arr[i]);
+    }
+  }
+  return response;
+};
